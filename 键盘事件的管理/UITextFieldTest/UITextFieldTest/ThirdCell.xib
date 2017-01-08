@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="thirdCell" rowHeight="97" id="KGk-i7-Jjw" customClass="ThirdCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-LJ-w1B">
+                        <rect key="frame" x="8" y="10" width="304" height="76.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ip2-LJ-w1B" secondAttribute="bottom" constant="10" id="Hzq-LB-RZJ"/>
+                    <constraint firstItem="Ip2-LJ-w1B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IQt-in-4Sh"/>
+                    <constraint firstAttribute="centerY" secondItem="Ip2-LJ-w1B" secondAttribute="centerY" id="J5h-3V-EJh"/>
+                    <constraint firstItem="Ip2-LJ-w1B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PPU-ZT-acF"/>
+                    <constraint firstAttribute="trailing" secondItem="Ip2-LJ-w1B" secondAttribute="trailing" constant="8" id="kxk-60-HFe"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="J5h-3V-EJh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="Ip2-LJ-w1B" id="BPN-2O-fb7"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="334.5"/>
+        </tableViewCell>
+    </objects>
+</document>
